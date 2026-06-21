@@ -47,8 +47,7 @@ def detectar_corredor(contacto, descripcion):
     marcas_conocidas = [
         "remax", "century 21", "engel", "volkers", "procasa", "santander inmobiliaria",
         "alma inmobiliaria", "brokers", "fullhouse", "mg inmobiliaria", "synergy", "premier",
-        "vivaqui", "easy prop", "kiteprop", "grupo premium", "ana laura matteri",
-        "elitte propiedades", "asin propiedades", "re max"
+        "vivaqui", "easy prop", "kiteprop", "grupo premium", "asin propiedades", "re max"
     ]
 
     negadores = [
