@@ -1,6 +1,6 @@
 # Scraper CaptaPropiedades
 
-Pipeline de scraping y machine learning que extrae anuncios inmobiliarios de yapo.cl y estima, por anuncio, la probabilidad de que ya tenga un corredor a cargo — para identificar leads de captación (propietarios vendiendo sin intermediario).
+Pipeline de scraping y machine learning que extrae anuncios inmobiliarios de un portal inmobiliario público y estima, por anuncio, la probabilidad de que ya tenga un corredor a cargo — para identificar leads de captación (propietarios vendiendo sin intermediario).
 
 Es el motor de datos detrás de [CaptaPropiedades](https://github.com/bbalbo/captapropiedades-public), una plataforma que estuvo en producción vendiendo estas bases filtradas a corredores de propiedades.
 
@@ -12,7 +12,7 @@ Es el motor de datos detrás de [CaptaPropiedades](https://github.com/bbalbo/cap
 
 ```
 00_loop_scraper.py        → ejecuta el scraper repetidamente con pausas aleatorias (anti-bloqueo)
-01_scraper.py              → scraping de yapo.cl (casas, departamentos, terrenos)
+01_scraper.py              → scraping (casas, departamentos, terrenos)
 02_pipeline.py              → consolida varios días de scraping, elimina duplicados
 03_heuristica_corredor.py    → reglas de texto → etiqueta inicial "es corredor" (0/1)
 04a/04b_aplicar_modelo.py     → TF-IDF + Logistic Regression entrenado sobre la heurística → probabilidad continua
@@ -64,7 +64,7 @@ Este repositorio no incluye ninguna base de datos generada por el scraper (`bbdd
 <a name="scraper-captapropiedades-english"></a>
 ## Scraper CaptaPropiedades (English)
 
-A scraping + machine learning pipeline that extracts real-estate listings from yapo.cl and scores each one with the probability that it's already represented by an agent — surfacing leads where the owner is selling directly.
+A scraping + machine learning pipeline that extracts real-estate listings from a public listings portal and scores each one with the probability that it's already represented by an agent — surfacing leads where the owner is selling directly.
 
 It's the data engine behind [CaptaPropiedades](https://github.com/bbalbo/captapropiedades-public), a platform that ran in production selling these filtered, scored listings to real-estate agents.
 
