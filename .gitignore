@@ -1,0 +1,13 @@
+# Ignorar carpetas
+bbdd_final/
+bbdd_finales/
+salida1/
+salida2/
+salida3/
+salida4/
+
+# Ignorar notebooks
+*.ipynb
+
+# Ignorar archivos txt
+*.txt
