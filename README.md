@@ -58,11 +58,6 @@ Este pipeline corre con rutas relativas al propio directorio del script (`CARPET
 
 Este repositorio no incluye ninguna base de datos generada por el scraper (`bbdd_finales/`, `salida*/`) — son anuncios inmobiliarios reales extraídos de un portal público, y eran el producto comercial del proyecto, no datos personales. El código del pipeline completo sí está incluido y es funcional contra datos propios.
 
-## Qué haría distinto hoy
-
-- Reemplazar TF-IDF + Logistic Regression por embeddings preentrenados para generalizar mejor con vocabulario y formatos de anuncio nuevos.
-- Reemplazar el pipeline de carpetas numeradas por un orquestador simple (aunque sea un Makefile o un script único con etapas), para que el orden y las dependencias entre pasos sean explícitos.
-- Medir el modelo contra un set de datos etiquetado a mano, no solo contra las etiquetas que genera la propia heurística.
 
 ---
 
